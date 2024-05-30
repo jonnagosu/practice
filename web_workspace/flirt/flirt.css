@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.frame_out{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20vh;
+    overflow: hidden;
+}
+.frame_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellowgreen;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.frame_2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 2s;
+}
+.frame_2 p{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium';
+    color: pink;
+}
+.frame_2 #heart{
+    position: absolute;
+    font-size: 250px;
+    color: pink;
+    opacity: 0.5;
+}
+/*------------------- hover -------------------*/
+.frame_out:hover .frame_1{
+    opacity: 0;
+}
+.frame_out:hover .frame_2{
+    position: absolute;
+    top: 0;
+    opacity: 1;
+}
